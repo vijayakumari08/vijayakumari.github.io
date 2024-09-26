@@ -1,0 +1,77 @@
+1. Set title and describtion for social media platforms
+      *og:-open graph is used for share url in social media.
+      *og:title-It is a basic tag that defines the title of the page.
+      <meta property="og:title" content="My title">
+      <meta property="og:describtion" content="My describtion">
+2. How to create repository using git cli.
+      step 1: give the command - git init.
+      step 2: add file - git add <file>
+      step 3: git commit -m "Initial commit"
+      step 4: git remote add orgin <repository-url>
+      step 5: git push -u origin master
+3.How to write internal styles with examples?
+      *Integrating the <style> element in the <head> section of a HTML web page.
+        <style> 
+            h1 {
+                color:green;
+                font-size: 50px;
+                text-align:center;
+            }     
+            p{ 
+                color:green;
+                font-size: 50px;
+                line-height: 1.5;
+                text-align:center;
+
+            } 
+         </style>
+ 4.How to style second last child using css with examples?
+      * The :nth-Last-child(n) selecter matches every element that is the nth child, regardless of type, of its parent, counting from the last child.
+      ex:
+      p:nth-Last-child(2){
+        background: red;
+      }  
+ 5.How to write styles to group of elements?
+       *separating them with commas
+       h1, p {
+        padding: 5px;
+        color: grey;
+       }    
+ 6.How to set tab name in htnl?
+      *You can set the tab name in HYML using the '<title> tag.
+      <title> Tab Name </title>       
+ 7.Wht is stashing and how to implement it using git cli?
+      stashing is a temporary storage for your changes.
+      git stash
+      git stash list 
+      git stash apply
+ 8. Which tag is used to set tab icon in HTML?
+
+    The `<link>` tag is used to set the tab icon in HTML:
+
+     <link rel="icon" href="favicon.ico"> #this is used in head 
+
+    <img=" " alt=""> #this is used in body 
+
+      both are we used in certain cases of html.
+
+9. List all basic selectors in HTML:
+
+     Here are the basic selectors in HTML:
+
+    `*` (universal selector)
+    `#id` (id selector)
+    'class` (class selector)
+    `tag` (tag selector)
+    'global' (.*)
+    'descended'
+    ' grouping'
+    `[attribute]` (attribute selector)
+
+10. How to apply styles to all input fields with password type in CSS?
+
+         You can apply styles to all input fields with password type using the attribute selector:
+
+        input[type="password"] {
+            border: 1px solid red;
+        }                 

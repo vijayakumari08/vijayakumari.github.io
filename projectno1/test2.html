@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration <form action=""></form></title>
+    <style>
+        .form1 p::first-letter{
+    font-weight: bold;
+}
+.form1 span{
+    color: red;
+}
+.form1 select{
+    box-shadow: 3px 3px 15px rgb(19, 19, 19);
+}
+.form1 option:nth-child(even){
+    background-color: whitesmoke;
+    color: gray;
+    font-weight: bold;
+}
+
+.form1 option:nth-child(odd){
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+}
+.form1 input[type="checkbox"]:checked+ label{
+    color: red;
+    font-weight: bold;
+}
+.form2 label[class="required"]::after{
+    color: rgb(9, 9, 237);
+    content: '*';
+}
+.form2 input[required]:focus{
+    
+    color: rgb(9, 9, 9);
+    background-color: rgb(255, 255, 255);
+    border: 2.5px solid rgb(242, 46, 11);
+}
+.form2 input[name="city"]:focus{
+    
+    color: rgb(9, 9, 9);
+    background-color: rgb(255, 255, 255);
+    border: 2.5px solid rgb(230, 9, 238);
+}
+.form2 label[for]:hover{
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+.form2 label[for="city"]:hover{
+    color: yellow;
+    font-weight: bold;
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <P><h1><ins>Even Qstn</ins></h1></P>
+        <h1>ENQUIRY FORM</h1>
+        <div class="form1">
+                <p>Name <span>*</span></p>
+                <input type="text" id="name" required><br><br>
+        </div>
+        <div class="form1">
+            <p>Email <span>*</span></p>
+            <input type="text" id="email" required><br><br>
+        </div>
+        <div class="form1">
+            <label class="course">Course:</label>
+            <select class="optional">
+                <option>Select</option>
+                <option>Fullstack</option>
+                <option>Front-end</option>
+                <option>Back-end</option>
+                <option>AWS</option>
+            </select>
+        </div><br>
+        <div class="form1">
+            <label class="preferred location">Preferred location:</label>
+            <select name="preferred location">
+                <option>Select</option>
+                <option>Anna Nagar</option>
+                <option>Besant Nagar</option>
+                <option>Porur</option>
+                <option>OMR</option>
+            </select>
+        </div><br>
+        <div class="form1">
+            <label class="current location">Current location:</label>
+            <input type="text" id="location" name="current location"><br><br>
+        </div>
+        <div class="form1">
+        <input type="checkbox" checked="checked">
+        <label>Subscribe for newsletter</label>
+    </div><br>
+    <center><input type="submit" value="Submit" required>&nbsp;</center>
+    </form>
+
+    
+    <form>
+        <h1><ins>Odd Qstn</ins></h1>
+            <center><h1>VALIDATION FORM</h1></center>
+            <div class="form2">
+                <label for="name2" class="required">Name</label>
+                <input type="text" name="name2" required ><br><br>
+            </div>
+            <div class="form2">
+                <label for="date" class="required">DOB</label>
+                <input type="date" name="dob" required ><br><br>
+            </div>
+            <div class="form2">
+                <label for="mail2" class="required">Email</label>
+                <input type="text" name="email2" required ><br><br>
+            </div>
+            <div class="form2">
+                <label for="number" class="required">Mob No</label>
+                <input type="number" name="number" required ><br><br>
+            </div>
+            <div class="form2">
+                <label for="city" class="label">City</label>
+                <input type="text" name="city"><br><br>
+            </div>
+            <div class="form2">
+                <input type="checkbox" name="checkbox">
+                <label>I agree terms & conditions</label><br><br>
+            </div>
+                <center><input type="Submit" value="Submit"></center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test3</title>
+    <style>
+
+   ul li::before {
+         content: "* ";
+    }
+    .child li:nth-last-child(2){
+        color: blue;
+    }
+    .col1{
+        background-color: blue;
+        border: 2.5px solid yellow;
+        padding: 15px;
+    }
+    .col2{
+        background-color: blue;
+        border: 2.5px solid yellow;
+        padding: 15px;
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows:30px 30px 30px ;
+
+    }
+    .container1>div{
+        background-color: brown;
+        color: blueviolet;
+        font-weight: bold;
+        border: 2.5px solid blue;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .container2{
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container2>div{
+    background-color: rgb(219, 154, 13);
+    font-weight: bolder;
+    border: solid rgb(17, 196, 11);
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container3 .num1{
+    grid-column: 1/3;
+    background-color: #7badcb;
+    border: solid rgb(66, 13, 211) 3px;
+    text-align: center;
+    font-size: large;
+    margin-right: 5px;
+}
+
+.container3 .num2{
+    background-color: rgb(16, 189, 219);
+}
+
+.container3 .num3{
+    background-color: rgb(192, 12, 168);
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(104, 177, 8);
+}
+
+.container4 div{
+    border: rgba(0, 63, 253, 0.959) solid;
+    background-color: rgba(0, 255, 255, 0.499);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Odd</h1>
+    <ol>
+    <li>HOW TO SWITCH BRANCH USING GIT CLI?</li>
+      <p>$ git checkout branch name</p>
+     <li>LIST ALL SEMANTIC TAGS IN HTML</li>
+       <p>header,article,aside,main,nav,mark,section,summary,time,footer</p>
+     <li>LIST ALL GLOBAL ATTRIBUTES IN HTML</li>
+       <p> id,class,style,inert,hidden,content editable,data,title,accesskey,tabindex,lang,autofocus,spellchecktranslate</p>      
+     <li>WHAT IS THE PURPOSE OF FOR ATTRIBUTES?
+        When used with the "label" element, the "for"attribute specifies which form element the label is bound to then clicking the "label"will focus the corresponding input element.
+       <p> <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name" name="name" required/>   
+       </p> 
+       <p>
+        <label for="password">Password:</label>
+        <input type="text" id="password" placeholder="Password" name="Password" required/>
+       <li>WRITE A SELECTOR TO SELECT ALL THE ADJACENT SIBLINGS OF DIV TAGS</li>
+       <p>div~p</p>
+    <h1>Even</h1>
+    <ol>
+        <li>HOW TO STAGE ALL MODIFIED FILES USING GIT CLI?</li>
+        <p>git add</p>
+        <li>.LIST ALL POSSIBLE ATTRIBUTES OF ANCHOR TAG</li>
+        <p>href,target,inert,hidden,id,class,tabindex,download,accesskey</p>
+        <li>.WRITE UNOREDERD LIST WITH '*' AS PREFIX TO EACH LIST USING CSS</li>
+        <ul>
+            <li class="list-item">Amazon</li>
+            <li class="list-item">Zoho</li>
+            <li class="list-item">Tata</li>
+        </ul>
+        <li>SELECT SECOND LAST CHILD OF UNORDERED LIST USING CSS
+        </li>
+        <ul class="child">
+            <li class="list-item">America</li>
+            <li class="list-item">Kannada</li>
+            <li class="list-item">India</li>
+            <li class="list-item">Landon</li>
+        </ul>
+        <li>WRITE HTML TAG TO INCLUDE EXTERNAL CSS</li>
+        <p> < link rel="stylesheet" href="style.css" ></p><br>
+
+       <h1>Odd & Even</h1>
+       <p>1.HOW TO CREATE A TWO COLUMN LAYOUT USING FLEXBOX?</p>
+       <div class="container">
+        <div class="col1">Hi</div>
+        <div class="col2">Hello</div>
+       </div>
+        <p>2.HOW TO CREATE A THREE COLUMN LAYOUT USING GRID?</p>
+        <div class="container1">
+            <div class="col3">COLUMN1</div>
+            <div class="col4">COLUMN2</div>
+            <div class="col5">COLUMN3</div>
+        </div>
+        <p>3.HOW TO ARRANGE ROWS IN DESCENDING OREDER USING FLEXBOX?</p>
+        <div class="container2">
+           <div class="rows">COLUMN1</div>
+           <div class="rows">COLUMN2</div>
+           <div class="rows">COLUMN3</div>
+           <div class="rows">COLUMN4</div>
+           <div class="rows">COLUMN5</div>
+        </div>
+        <p>4.HOW TO SET A GRID ITEM TO OCCUPY FIRST TWO COLUMNS IN GRID?</p>
+        <div class="container3">
+            <div class="num1">Col1</div>
+            <div class="num2">Col2</div>
+            <div class="num3">Col3</div>
+        </div>
+        <p>5.5. How to arrange flex items center (Y-axis)?</p>
+        <p>
+            <div class="container4">
+                <div>item1</div>
+                <div>item2</div>
+                <div>item3</div>
+                <div>item4</div>
+            </div>
+        </p>
+        </ol> 
+    </p>
+      </li>
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
